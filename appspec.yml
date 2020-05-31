@@ -1,11 +1,5 @@
 version: 0.0
-os: linux
+os: windows
 files:
-  - source: /index.html
-    destination: /home/ec2-user
-hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: root
-   
+  - source: .
+    destination: c:\inetpub\wwwroot
